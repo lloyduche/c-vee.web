@@ -1,0 +1,152 @@
+﻿@model ListToReturn
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Ayi&#224;</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="~/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/cssStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        .modal-dialog {
+            transform: translate(0, -50px);
+            top: 10%;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <a class="navbar-brand m-0" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo.png" width="62" alt="" class="d-inline-block align-middle">
+                </a>
+                <div class="nav-text">
+                    <span style="font-weight:bold; font-size:18px; font-stretch:ultra-condensed">Ayi&#224;</span><br />
+                    <span style="font-weight:lighter; font-size:13px;">Sell yourself Proudly</span>
+                </div>
+            </div>
+
+            <ul class="list-unstyled components">
+
+                <li class="active">
+
+                    <a href="#">
+                        <i class="fa fa-book"></i>
+                        <span class="ml-3">Portfolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fa fa-hard-hat"></i>
+                        <span class="ml-3">Job Title</span>
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a asp-controller="Home" asp-action="Guest" >All Job Titles</a>
+                        </li>
+                        @foreach (var item in Model.Info)
+                        {
+                            <li>
+                                <a asp-controller="Home" asp-action="JobTitleSearch" asp-route-jobTitle="@item">@item</a>
+                            </li>
+
+                        }
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-address-card"></i>
+                        <span class="ml-3 font-weight-light">About</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa fa-phone"></i>
+                        <span class="ml-3 font-weight-light">Contact</span>
+
+                    </a>
+                </li>
+            </ul>
+            <div class="">
+                <ul class="list-unstyled bottom">
+                    <li>
+                        <a class="text-right" asp-controller="Home" asp-action="Login">
+                            <span class="mr-3">Login</span>
+                            <i class="fa fa-sign-in-alt"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-right" asp-controller="Home" asp-action="Register">
+                            <span class="mr-3">Sign Up</span>
+                            <i class="fa fa-user-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar bg-transparent">
+                <div class="col-12 d-flex flex-row p-0 pr-4">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                    <form class="navbar-form navbar-right ml-auto" role="search" method="get" asp-controller="Home" asp-action="QuerySearch">
+                        <div class="p-1 bg-light rounded rounded-pill shadow-sm ml-4">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button id="button-addon2" type="submit" class="btn btn-link text-warning"><i class="fa fa-search"></i></button>
+                                </div>
+                                <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon2" class="form-control border-0 bg-light" name="query">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+
+            @RenderBody()
+
+        </div>
+
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/script.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+</html>

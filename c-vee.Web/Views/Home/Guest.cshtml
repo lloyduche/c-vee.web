@@ -1,0 +1,56 @@
+﻿@model ListToReturn
+@{ 
+    Layout = "_GuestLayout";
+}
+@if (ViewBag.ErrSearch != null)
+{
+
+    <div class="row d-flex flex-row justify-content-center align-content-center">
+        <div class="col-12 reg-con-padd">
+            <div class="col-lg-12">
+                <h1 class="text-center">
+                    Oops! Sorry, @ViewBag.ErrSearch!
+                    <span style="font-size:50px;">&#128563;</span>
+                </h1>
+
+                <div style="margin-bottom:20vh;text-align:center">
+                    <a class="btn mt-5 p-2 px-4" asp-action="Guest" asp-controller="Home" 
+                       style="color: #FFB15B;border: 2px solid #623131;border-radius:20px;">
+                        click to continue
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="p-0 pt-4 d-flex flex-lg-row  flex-sm-row flex-wrap">
+
+        @foreach (var user in Model.Data.ResponseData)
+        {
+
+            <div class="card-container">
+                <div class="">
+                    <a style="cursor:pointer;" asp-controller="Home" asp-action="Profile" asp-route-UserId="@user.id">
+                        <img class="round img-fluid" src="https://res.cloudinary.com/oddcubes/image/upload/v1623677056/fluxk0fwarirww2bqpb9.jpg" alt="user" />
+                    </a>
+                    <a href="" class="btn msg-btn"> Message </a>
+                </div>
+                <div class="col-12 d-flex flex-row p-0 pl-2 over">
+                    <div class="col-9 p-0">
+                        <h3>@user.firstname @user.lastname </h3>
+                        <p>@user.jobTitle</p>
+                    </div>
+                    <div class="col-3 buttons">
+                        <a type="submit" class="btn more-btn"  asp-controller="Home" asp-action="Profile"  asp-route-UserId="@user.id">
+                            +
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        }
+
+    </div>
+}

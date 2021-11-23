@@ -1,0 +1,37 @@
+2021-08-08 00:04:24.6531 ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware| An unhandled exception has occurred while executing the request.
+2021-08-08 00:04:55.7353 ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor| The view 'Register' was not found. Searched locations: /Views/Home/Register.cshtml, /Views/Shared/Register.cshtml
+2021-08-08 00:04:55.8030 ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware| An unhandled exception has occurred while executing the request.
+2021-08-08 01:19:31.0427 ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor| The view 'RegistrationConfirmed' was not found. Searched locations: /Views/Home/RegistrationConfirmed.cshtml, /Views/Shared/RegistrationConfirmed.cshtml
+2021-08-08 01:19:31.1976 ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware| An unhandled exception has occurred while executing the request.
+2021-08-08 01:30:02.6195 ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware| An unhandled exception has occurred while executing the request.
+2021-08-08 01:43:23.5547 ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor| The view 'RegistrationConfirmed' was not found. Searched locations: /Views/Home/RegistrationConfirmed.cshtml, /Views/Shared/RegistrationConfirmed.cshtml
+2021-08-08 01:43:23.7124 ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware| An unhandled exception has occurred while executing the request.
+2021-08-08 07:16:29.5979 ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware| An unhandled exception has occurred while executing the request.
+2021-08-08 07:23:15.8719 ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor| The view 'RegistrationConfirmed' was not found. Searched locations: /Views/Home/RegistrationConfirmed.cshtml, /Views/Shared/RegistrationConfirmed.cshtml
+2021-08-08 07:23:16.0917 ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware| An unhandled exception has occurred while executing the request.
+2021-08-08 18:41:32.5757 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 18:42:11.8533 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 18:55:15.5213 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 18:55:29.9362 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 18:55:58.9874 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 18:56:46.9206 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 18:56:50.9159 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 18:57:55.3662 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 18:57:59.2703 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 18:58:21.2643 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 18:58:49.9229 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 18:58:55.5504 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 18:59:47.6731 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 18:59:51.0352 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 19:01:00.0703 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 19:01:30.7666 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 19:02:32.6255 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 19:02:37.1138 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 19:02:56.2116 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 19:03:19.9572 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 20:55:46.3767 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 20:56:03.0153 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 20:56:11.4872 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 20:56:15.5611 WARN|Microsoft.AspNetCore.Session.SessionMiddleware| Error unprotecting the session cookie.
+2021-08-08 22:05:08.8777 ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor| The view 'Login' was not found. Searched locations: /Views/Auth/Login.cshtml, /Views/Shared/Login.cshtml
+2021-08-08 22:05:09.0966 ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware| An unhandled exception has occurred while executing the request.

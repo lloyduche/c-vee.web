@@ -1,0 +1,78 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Ayi&#224;</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/cssStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+        .modal-dialog {
+            transform: translate(0, -50px);
+            top: 10%;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body class="body">
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container">
+                <a class="navbar-brand m-0" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo.png" width="75" alt="" class="d-inline-block align-middle mr-2">
+                </a>
+                <div class="nav-text">
+                    <span style="font-weight:bold; font-size:22px; font-stretch:ultra-condensed">Ayi&#224;</span><br />
+                    <span style="font-weight:lighter; font-size:14px;">Sell yourself Proudly</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-lg-auto float-sm-right">
+                        <li class="nav-item">
+                            <a class="btn nav-btn" asp-controller="Home" asp-action="Login">LOGIN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn nav-btn" asp-controller="Home" asp-action="Register">SIGN UP</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <div class="container mt-4">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+   
+
+
+    @section scripts{
+        @{
+            <partial name="_ValidationScriptsPartial" />
+        }
+    }
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/script.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,97 @@
+﻿@model RegisterViewModel
+
+
+<div class="row d-flex flex-lg-row flex-sm-row-reverse justify-content-center align-content-center pt-5">
+   
+    <div class="col-lg-5 col-sm-12 ">
+        <div class="col-sm-12">
+            <div class="col-12 text-center p-3 pt-4">
+                <div class="form-title text-center">
+                    <h4 class="font-weight-bolder" style="color: #623131;">Create A New Account</h4>
+                </div>
+                <hr />
+                <div>
+                    @if (ViewBag.LoginErrMsg == true)
+                    {
+                        <div class="d-flex justify-content-center ">
+
+                            <div style="width:100%; text-align:justify;" asp-validation-summary="All" class="alert alert-danger forgotPass-list-error" id="summary"></div>
+
+                        </div>
+                    }
+                </div>
+                <form asp-controller="Home" asp-action="Register" method="post">
+
+
+                    <div class="row align-items-center mt-4">
+                        <div class="col">
+                            <input asp-for="FirstName" type="text" class="form-control" placeholder="First Name" autocomplete="off" required>
+                            <span class="text-danger font-italic small " asp-validation-for="@Model.FirstName"></span>
+                        </div>
+                        <div class="col">
+                            <input asp-for="LastName" type="text" class="form-control" placeholder="Last Name" required>
+                            <span class="text-danger font-italic small " asp-validation-for="@Model.LastName"></span>
+                        </div>
+                        
+                    </div>
+                    <div class="row align-items-center mt-4">
+                        <div class="col">
+                            <input asp-for="Email" type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class=" col-12 text-center">
+                            <span class="text-danger font-italic small" asp-validation-for="@Model.Email"></span>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mt-4">
+                        <div class="col">
+                            <input asp-for="Phone" type="text" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class=" col-12 text-center">
+                            <span class="text-danger font-italic small" asp-validation-for="@Model.Phone"></span>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mt-4">
+
+                        <div class="col">
+                            <select asp-for="JobTitle" class="form-control" id="exampleFormControlSelect1">
+                                <option selected>Choose Job Title...</option>
+                                <option>deok</option>
+                                <option>chick</option>
+                                <option>farm</option>
+                            </select>
+                        </div>
+                         
+                    </div>
+                    <div class="row align-items-center mt-4">
+                        <div class="col">
+                            <input asp-for="PassWord" type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="col">
+                            <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Confirm Password">
+                            <span class="text-danger font-italic small" asp-validation-for="@Model.ConfirmPassword"></span>
+                        </div>
+                        <div class=" col-12 text-center">
+                            <span class="text-danger font-italic small" asp-validation-for="@Model.PassWord"></span>
+                        </div>
+                    </div>
+                    <div class="row mb-4 mt-3">
+                        <div class="col-lg-8 col-sm-6 d-flex justify-content-center align-items-center">
+                            <div class="form-check" style="font-size:16px;">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="" for="exampleCheck1"> Accept terms & conditions</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 form-group">
+                            <button type="submit" class="btn login-btn">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

@@ -1,0 +1,13 @@
+2021-08-07 20:45:11.6774 FATAL|Microsoft.AspNetCore.Hosting.Diagnostics| Application startup exception
+2021-08-07 20:46:02.1243 FATAL|Microsoft.AspNetCore.Hosting.Diagnostics| Application startup exception
+2021-08-07 21:07:42.5511 ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware| An unhandled exception has occurred while executing the request.
+2021-08-07 21:09:41.2261 ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor| The view 'Register' was not found. Searched locations: /Views/Auth/Register.cshtml, /Views/Shared/Register.cshtml
+2021-08-07 21:09:41.2994 ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware| An unhandled exception has occurred while executing the request.
+2021-08-07 21:34:44.7150 ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware| An unhandled exception has occurred while executing the request.
+2021-08-07 21:54:29.5060 ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor| The view 'Register' was not found. Searched locations: /Views/Auth/Register.cshtml, /Views/Shared/Register.cshtml
+2021-08-07 21:54:29.7114 ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware| An unhandled exception has occurred while executing the request.
+2021-08-07 22:19:03.2746 ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor| The view 'testView' was not found. Searched locations: /Views/Auth/testView.cshtml, /Views/Shared/testView.cshtml
+2021-08-07 22:19:03.4337 ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware| An unhandled exception has occurred while executing the request.
+2021-08-07 22:20:24.6469 ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor| The view 'TestView' was not found. Searched locations: /Views/Auth/TestView.cshtml, /Views/Shared/TestView.cshtml
+2021-08-07 22:20:24.8017 ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware| An unhandled exception has occurred while executing the request.
+2021-08-07 23:56:52.0613 ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware| An unhandled exception has occurred while executing the request.

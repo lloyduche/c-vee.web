@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "lpmCBjEjWQscVA4B2uBusqL7EVsKyGBizu59xaolQcuc80D5nrtE+DTEpsU9aCDpVcoXbuOZYV7bXNyV54hZNw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hp\\source\\repos\\c-vee.Web\\c-vee.Web.Data\\c-vee.Web.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

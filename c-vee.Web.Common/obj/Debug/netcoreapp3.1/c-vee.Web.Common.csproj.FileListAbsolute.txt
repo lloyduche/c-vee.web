@@ -1,0 +1,9 @@
+C:\Users\hp\source\repos\c-vee.Web\c-vee.Web.Common\bin\Debug\netcoreapp3.1\c-vee.Web.Common.deps.json
+C:\Users\hp\source\repos\c-vee.Web\c-vee.Web.Common\bin\Debug\netcoreapp3.1\c-vee.Web.Common.dll
+C:\Users\hp\source\repos\c-vee.Web\c-vee.Web.Common\bin\Debug\netcoreapp3.1\c-vee.Web.Common.pdb
+C:\Users\hp\source\repos\c-vee.Web\c-vee.Web.Common\obj\Debug\netcoreapp3.1\c-vee.Web.Common.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\c-vee.Web\c-vee.Web.Common\obj\Debug\netcoreapp3.1\c-vee.Web.Common.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\c-vee.Web\c-vee.Web.Common\obj\Debug\netcoreapp3.1\c-vee.Web.Common.AssemblyInfo.cs
+C:\Users\hp\source\repos\c-vee.Web\c-vee.Web.Common\obj\Debug\netcoreapp3.1\c-vee.Web.Common.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\c-vee.Web\c-vee.Web.Common\obj\Debug\netcoreapp3.1\c-vee.Web.Common.dll
+C:\Users\hp\source\repos\c-vee.Web\c-vee.Web.Common\obj\Debug\netcoreapp3.1\c-vee.Web.Common.pdb
